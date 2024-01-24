@@ -1,9 +1,24 @@
-
+/* :root{
+    --from-color:#101b29;
+    --to-color:black;
+} */
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #1d1d1d;
+    inherits: false;
+  }
+  
+@property --myColor2 {
+syntax: '<color>';
+initial-value: black;
+inherits: false;
+}
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 
@@ -24,12 +39,18 @@ body {
 .main {
     width: 73vw;
     border: 2px solid white;
-    background-color: rgb(8, 8, 57);
     height: 80vh;
     margin-top: 10px;
     border-radius: 10px;
 }
-
+.till-first-section{
+    padding: 23px 20px 20px 20px;
+    /* background: linear-gradient(to bottom, var(--from-color), var(--to-color)); */
+    border-radius: 10px;
+      
+    background: linear-gradient(to bottom, var(--myColor1), var(--myColor2));
+    transition: --myColor1 1.5s, --myColor2 2s;
+}
 ul{
     list-style: none;
     display: flex;
@@ -38,9 +59,9 @@ ul{
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
     height: 50px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     /* background-color: black; */
 }
 
@@ -62,7 +83,7 @@ nav{
     background-color: white;
     border-radius: 19px;
     color: black;
-    padding: 8px 15px;
+    padding: 7px 15px;
     font-weight: 600;
     font-size: 14px;
 }
@@ -79,6 +100,19 @@ nav{
     font-weight: 700;
 }
 
+li:hover{
+    cursor: pointer;
+}
+
+.explore:hover{
+    background-color: rgb(234, 229, 229);
+    padding: 8px 17px;
+}
+
+.install:hover{
+    padding: 9px 17px;
+}
+
 .install svg{
     padding: 0px 5px;
 }
@@ -87,7 +121,10 @@ nav{
     background-color: black;
     padding: 5px 8px;
     border-radius: 22px;
-    /* padding: 9px; */
+}
+
+.bell:hover{
+    padding: 6px 10px;
 }
 
 .user{
@@ -96,4 +133,80 @@ nav{
     padding: 7px 11px;
     font-size: 14px;
     font-weight: 700;
+}
+
+.user:hover{
+    padding: 8px 13px;
+}
+
+.greet{
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.first ul{
+    width: 70vw;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.first ul li img{
+    width: 50px;
+}
+.first ul li{
+    width: 348px;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    position: relative;
+}
+
+body:has(.time-cap:hover) .till-first-section {
+    /* background: linear-gradient(to bottom, rgba(135, 207, 235, 0.756), rgba(0, 0, 255, 0.626)); */
+    
+    --myColor1: rgba(93, 201, 244, 0.3);
+    --myColor2: rgba(153, 153, 249, 0.3);
+}
+body:has(.bollywood:hover) .till-first-section {
+    --myColor1: rgba(196, 243, 65, 0.3);
+    --myColor2: rgba(240, 249, 164, 0.3);}
+body:has(.ipop:hover) .till-first-section {
+    --myColor1: rgba(201, 99, 244, 0.3);
+    --myColor2: rgba(156, 156, 247, 0.3);
+}
+body:has(.hindi:hover) .till-first-section {
+    --myColor1: rgba(233, 99, 245, 0.3);
+    --myColor2: rgba(249, 150, 208, 0.3);}
+body:has(._2020:hover) .till-first-section {
+    --myColor1: rgba(248, 61, 61, 0.3);
+    --myColor2: rgba(249, 173, 173, 0.3);}
+body:has(.sigma:hover) .till-first-section {
+    --myColor1: rgba(248, 132, 54, 0.3);
+    --myColor2: rgba(239, 204, 130, 0.3);}
+
+.first ul li span{
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.first ul li:hover{
+    background-color: rgb(74, 74, 74);
+}
+
+.play{
+    padding: 6px 6px 4px 6px;
+    background-color: rgb(5, 255, 5);
+    box-shadow: 0px 4px 10px 0px rgb(41, 41, 41);
+    border-radius: 35px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.first ul li:hover .play{
+    display: block;
 }
