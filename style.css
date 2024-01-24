@@ -1,5 +1,24 @@
-.home{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.sidebar {
+    width: 25vw;
     border: 2px solid black;
-    height: 40px;
-    width: 363px;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main {
+    width: 73vw;
+    border: 2px solid black;
+
 }
