@@ -1,0 +1,99 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.sidebar {
+    width: 25vw;
+    border: 2px solid black;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.main {
+    width: 73vw;
+    border: 2px solid white;
+    background-color: rgb(8, 8, 57);
+    height: 80vh;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 2px solid white;
+    /* background-color: black; */
+}
+
+.right-sec ul {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 24vw;
+}
+
+.arrow{
+    background-color: rgb(29, 29, 29);
+    border-radius: 23px;
+    padding: 6px;
+    margin: 10px 4px;
+}
+
+.explore{
+    background-color: white;
+    border-radius: 19px;
+    color: black;
+    padding: 8px 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.install{
+    background-color: black;
+    border-radius: 19px;
+    color: black;
+    padding: 8px 15px;
+    color: white;
+    display: flex;
+    align-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.install svg{
+    padding: 0px 5px;
+}
+
+.bell{
+    background-color: black;
+    padding: 5px 8px;
+    border-radius: 22px;
+    /* padding: 9px; */
+}
+
+.user{
+    background-color: #934560;
+    border-radius: 26px;
+    padding: 7px 11px;
+    font-size: 14px;
+    font-weight: 700;
+}
