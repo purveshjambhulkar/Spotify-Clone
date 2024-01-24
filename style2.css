@@ -14,6 +14,14 @@ initial-value: black;
 inherits: false;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,13 +46,13 @@ body {
 
 .main {
     width: 73vw;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 80vh;
     margin-top: 10px;
     border-radius: 10px;
 }
 .till-first-section{
-    padding: 23px 20px 20px 20px;
+    padding: 23px 20px 0px 20px;
     /* background: linear-gradient(to bottom, var(--from-color), var(--to-color)); */
     border-radius: 10px;
       
@@ -61,6 +69,7 @@ nav{
     justify-content: space-between;
     align-items:flex-start;
     height: 50px;
+    position: sticky;
     /* border: 2px solid white; */
     /* background-color: black; */
 }
@@ -73,7 +82,7 @@ nav{
 }
 
 .arrow{
-    background-color: rgb(29, 29, 29);
+    background-color: rgba(20, 20, 20, 0.7);
     border-radius: 23px;
     padding: 6px;
     margin: 10px 4px;
@@ -208,5 +217,87 @@ body:has(.sigma:hover) .till-first-section {
 }
 
 .first ul li:hover .play{
+    display: block;
+}
+
+.texts{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.made-for-me{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.show-all{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(214, 211, 211);
+}
+
+.cards{
+    display: flex;
+    padding: 23px 20px 20px 20px;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 170px;
+    height: 180px;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.card{
+    height: 260px;
+    width: 180px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: rgb(25, 25, 25);
+    position: relative;
+}
+
+.card:hover{
+    background-color: rgb(41, 40, 40);
+}
+
+.title{
+    font-weight: 600;
+    font-size: 23px;
+    margin: 0px 0px 10px 10px;
+}
+
+.subtitle{
+    font-size: 13px;
+    font-weight: 200;
+    margin: 0px 0px 0px 10px;
+}
+
+.move-r{
+    margin-left: 20px;
+}
+
+.move-l{
+    margin-right: 20px;
+}
+
+.play-card{
+    padding: 10px 10px 8px 10px;
+    background-color: rgb(5, 255, 5);
+    box-shadow: 0px 4px 10px 0px rgb(41, 41, 41);
+    border-radius: 35px;
+    position: absolute;
+    bottom: 102px;
+    right: 23px;
+}
+
+.card:hover .play-card{
     display: block;
 }
