@@ -1,0 +1,156 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.home {
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    background-color: #1d1d1d;
+    margin: 15px 10px 8px 25px;
+
+}
+
+.homeimg {
+    margin-right: 22px;
+    height: 34px;
+    width: 24px;
+    
+}
+
+.hometext {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.library {
+    border: 2px solid black;
+    margin-top: 4px;
+    border-radius: 6px;
+    width: 25vw;
+    font-family: sans-serif;
+  
+    
+}
+
+.library> :first-child {
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.library> :first-child> :first-child {
+    margin-left: 20px;
+}
+
+.library> :first-child> :nth-child(2) {
+    padding-right: 139px;
+    font-size: 14px;
+}
+
+.library> :first-child> :nth-child(3) {
+    height: 26px;
+    width: 19px;
+}
+
+.library> :first-child> :nth-child(4) {
+    height: 26px;
+    width: 19px;
+}
+
+.button {
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: rgb(44, 43, 43);
+    border: 2px solid rgb(44, 43, 43);
+    border-radius: 48px;
+    padding: 6px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.library> :nth-child(2) {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 16vw;
+    justify-content: space-evenly;
+}
+
+.library> :nth-child(3) {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.library> :nth-child(3)> :nth-child(1) {
+    margin-left: 19px;
+}
+
+.library> :nth-child(3)> :nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.library> :nth-child(3)> :nth-child(2)> :nth-child(1) {
+    font-size: 17px;
+}
+
+.library> :nth-child(3)> :nth-child(2)> :nth-child(2) {
+    height: 26px;
+    width: 19px;
+    padding-left: 6px;
+}
+
+.library section {
+    height: 60vh;
+    overflow: auto;
+    margin-top: 7px;
+}
+
+.library section::-webkit-scrollbar {
+    width: 0.1em; /* For Webkit-based browsers (Chrome, Safari) */
+  }
+  
+  .library section::-webkit-scrollbar-thumb {
+    background-color: transparent; /* For Webkit-based browsers (Chrome, Safari) */
+  }
+  
+
+.music-bar img {
+    height: 47px;
+    width: 47px;
+    border-radius: 3px;
+}
+
+.music-bar {
+    display: flex;
+    justify-content: normal;
+    margin: 15px;
+    align-items: center;
+}
+
+.music-bar div {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.music-bar div :nth-child(1) {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.music-bar div :nth-child(2) {
+    font-size: 13px;
+    color: #ffffff9b;
+}
