@@ -7,11 +7,19 @@
 
 .sidebar {
     width: 25vw;
+    border-radius: 9px;
     border: 2px solid black;
-    
+    background: #1d1d1d;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column  ;
 }
 
+
 body {
+    overflow: hidden;
+    color: #ffffff;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
